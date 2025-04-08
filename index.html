@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jiyao Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./image/logo.png" alt="Logo">
+        </div>        <ul class="nav-links">
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a
+              href="#"
+              onclick="window.open('./CV.pdf', '_blank'); return false;"
+              >CV</a
+            >
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <!-- 左侧：头像、名字、头衔 -->
+        <div class="hero-left">
+          <img
+            src="./image/avatar.jpg"
+            alt="Profile Image"
+            class="profile-img"
+          />
+          <h1>Jiyao Pu</h1>
+        </div>
+        <!-- 右侧：个人简介文本 -->
+        <div class="hero-right">
+          <p>
+            Jiyao Pu received his Bachelors degree in 2016 from University of
+            Electronic Science and Technology of China. After that, He received
+            the M.Sc. degree from the School of Computing Science, The
+            University of Newcastle, UK, in 2020. He is currently a Ph.D.
+            student in the Hybrid Intelligence Lab, Department of Computer
+            Science, Durham University. His research interests include
+            reinforcement learning, rule generation, natural language
+            processing, automated game design, and procedural content
+            generation.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="publications" class="section">
+        <h2>Publications</h2>
+        <div class="publication-list">
+          <div class="publication-item">
+            <a
+              href="https://ieeexplore.ieee.org/abstract/document/10323083/"
+              target="_blank"
+            >
+              <img
+                src="./image/publication1.png"
+                alt="Publication 1"
+                class="publication-img"
+              />
+              <h3>
+                Rules for Expectation: Learning to Generate Rules via Social
+                Environment Modeling
+              </h3>
+            </a>
+          </div>
+          <div class="publication-item">
+            <a
+              href="https://ieeexplore.ieee.org/abstract/document/10219812/"
+              target="_blank"
+            >
+              <img
+                src="./image/publication2.png"
+                alt="Publication 2"
+                class="publication-img"
+              />
+              <h3>
+                Privacy-Enhanced Zero-Shot Learning via Data-Free Knowledge
+                Transfer
+              </h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <a href="https://ruleevo.github.io/" target="_blank">
+              <img
+                src="./image/project1.png"
+                alt="AI Research"
+                class="project-img"
+              />
+              <h3>
+                Triadic Reciprocal Dynamics: The AI Framework for Social Rule
+                Evolving
+              </h3>
+            </a>
+          </div>
+          <div class="project-item">
+            <a href="https://example.com/project2" target="_blank">
+              <img
+                src="./image/project2.png"
+                alt="Online Education Platform"
+                class="project-img"
+              />
+              <h3>
+                Flow-Centric Rule Design: Evolving Rules for Optimal Difficulty
+                and AI Skill Balance
+              </h3>
+            </a>
+          </div>
+          <div class="project-item">
+            <a href="https://aitalentbench.github.io/" target="_blank">
+              <img
+                src="./image/project4.png"
+                alt="trust-evolution-for-artifical-life-research"
+                class="project-img"
+              />
+              <h3>AI Talent Bench</h3>
+            </a>
+          </div>
+          <div class="project-item">
+            <a
+              href="https://glahadrt.itch.io/trust-evolution-for-artifical-life-research"
+              target="_blank"
+            >
+              <img
+                src="./image/project3.png"
+                alt="trust-evolution-for-artifical-life-research"
+                class="project-img"
+              />
+              <h3>Trust evolution for artificial life research</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section 示例 -->
+      <section id="contact" class="section">
+        <div class="contact-icons">
+          <!-- 图标1：Email -->
+          <a
+            href="mailto:rtpujiyao@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./image/mail.png" alt="Email Icon" class="icon-img" />
+          </a>
+
+          <!-- 图标2：LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/jiyao-pu-82094322b/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./image/linkedin.png"
+              alt="LinkedIn Icon"
+              class="icon-img"
+            />
+          </a>
+
+          <!-- 图标3：facebook -->
+          <a
+            href="https://www.facebook.com/galahad.rt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./image/facebook.png" alt="RSS Icon" class="icon-img" />
+          </a>
+
+          <!-- 图标4：头像或其他链接 -->
+          <a
+            href="https://x.com/GalahadRt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./image/twitter.png" alt="Your Face" class="icon-img" />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Jiyao Pu. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

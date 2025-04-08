@@ -1,0 +1,262 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全局字体与背景 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 导航栏 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #ffffff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* 根据需要调整 */
+  }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007acc;
+}
+
+/* Hero 部分 */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #ffffff;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* 各内容区块 */
+.section {
+    padding: 3rem 2rem;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* 课程和项目列表 */
+.publication-list,
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.publication-item,
+.project-item {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 45%;
+    text-align: center;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+
+/* 让父容器采用 flex 布局，实现左右分栏 */
+.hero {
+    display: flex;
+    /* 开启 Flex 布局 */
+    align-items: flex-start;
+    /* 顶端对齐，可根据需要改为 center 等 */
+    justify-content: center;
+    /* 水平居中 */
+    margin: 2rem auto;
+    /* 外边距可根据需求调整 */
+    max-width: 1000px;
+    /* 设置一个最大宽度，避免过度延伸 */
+}
+
+/* 左侧区域样式 */
+.hero-left {
+    flex: 0 0 300px;
+    /* 固定或最小宽度，可根据需求调整 */
+    margin-right: 2rem;
+    /* 与右侧间距 */
+    text-align: center;
+    /* 保持头像与文字居中 */
+}
+
+/* 头像样式 */
+.profile-img {
+    width: 150px;
+    /* 头像大小 */
+    height: 150px;
+    /* 保持宽高一致 */
+    border-radius: 50%;
+    /* 圆形头像 */
+    object-fit: cover;
+    /* 裁剪头像不变形 */
+    margin-bottom: 1rem;
+}
+
+/* 右侧区域样式 */
+.hero-right {
+    flex: 1;
+    /* 占据剩余空间 */
+    padding: 1rem;
+    /* 内边距 */
+    text-align: left;
+    /* 文字靠左排列 */
+}
+
+/* 可以根据需求进一步细化文字、标题等样式 */
+.hero-right h2 {
+    margin-bottom: 1rem;
+}
+
+.hero-right p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.publication-item {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s;
+    text-align: center;
+}
+
+.publication-img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.publication-item a {
+    color: #010103;
+    /* 继承父元素的颜色 */
+    text-decoration: none;
+    /* 移除下划线，可根据需求保留 */
+}
+
+/* 如果需要为鼠标悬停时也保持颜色一致 */
+.publication-item a:hover {
+    color: #010103;
+}
+
+
+.project-item {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s;
+    text-align: center;
+}
+
+.project-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/* 新增项目超链接样式，参考 publication-item a 的样式 */
+.project-item a {
+    color: #010103;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    color: #010103;
+}
+
+
+
+#contact {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/* 图标容器 */
+.contact-icons {
+    display: inline-flex;
+    gap: 1.5rem;
+    /* 控制图标之间的间距 */
+    margin-top: 1rem;
+}
+
+/* 图标图片样式 */
+.icon-img {
+    width: 50px;
+    /* 可根据需要调整大小 */
+    height: 50px;
+    /* 同宽度保持正方形 */
+    object-fit: cover;
+    /* 防止图片变形 */
+}
+
+/* 如果需要在鼠标悬停时添加效果，可自定义 */
+.contact-icons a:hover .icon-img {
+    filter: brightness(0.8);
+}
